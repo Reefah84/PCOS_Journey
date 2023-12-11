@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.WeightTrackerController">
+   <children>
+      <ImageView fitHeight="882.0" fitWidth="1705.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sl_112222_54110_25.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="150.0" prefWidth="1540.0" style="-fx-background-color: #ffafc7;">
+         <children>
+            <Text fill="#ac0099" layoutX="94.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight Tracker">
+               <font>
+                  <Font name="Arial Bold Italic" size="70.0" />
+               </font>
+            </Text>
+            <ImageView  fitHeight="150.0" fitWidth="200.0" layoutX="1352.0" layoutY="4.0"  pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Untitled729_20230916213949.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="home" onMouseClicked="#setBackHome" fill="#fe2868" layoutX="1427.0" layoutY="79.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="350.0" fitWidth="330.0" layoutX="1124.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pink-weight-scale-hi.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="435.0" layoutY="273.0" text="Enter your weight (in kg):" textFill="#d300a9">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="weight" layoutX="880.0" layoutY="260.0" prefHeight="68.0" prefWidth="127.0" promptText="kg" style="-fx-border-color: #d300a9;" />
+      <Label layoutX="435.0" layoutY="380.0" text="Enter your height (in cm):" textFill="#d300a9">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="height" layoutX="880.0" layoutY="370.0" prefHeight="66.0" prefWidth="127.0" promptText="cm" style="-fx-border-color: #d300a9;" />
+      <Label fx:id="BMIresult" layoutX="642.0" layoutY="558.0" text="Please give correct Input" textFill="#d326ea" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="Advice" layoutX="550.0" layoutY="635.0" prefHeight="109.0" prefWidth="680.0" text="Try reducing weight and keep a healthy BMI" textFill="#d938a4" visible="false" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="750.0" layoutY="480.0" mnemonicParsing="false" onAction="#calculateBMI" styleClass="weight" stylesheets="@button.css" text="SUBMIT" textFill="#e730a7">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

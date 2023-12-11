@@ -1,0 +1,74 @@
+.list-view {
+    -fx-background-color: #e6b3d2; /* Replace with your color */
+}
+
+.list-cell {
+    -fx-font-size: 20px;
+    -fx-background-color: #e6b3d2;
+}
+.list-cell:filled:selected {
+    -fx-background-color: #b74767; /* Optional: Color for selected item */
+    -fx-text-fill: #000000; /* Optional: Text color for selected item */
+}
+.titled-pane .title {
+    -fx-background-color:#ff7aa1; /* Example color for the title region */
+}
+.titled-pane .title:hover {
+    -fx-background-color: #e6688c; /* Darker shade for hover */
+}
+/* Style for the title pane when its content is showing */
+.titled-pane:expanded .title {
+    -fx-background-color: #e6688c; /* Darker shade when expanded */
+}
+.titled-pane > .content {
+    -fx-background-color: #FFB6C1 /* Example color for the content region */
+}
+.patient-message {
+    -fx-background-color: linear-gradient(to bottom, #f588ab, #ffdddc);
+}
+.menu-item-style {
+    -fx-font-size: 20px; /* Adjust the size as needed */
+    -fx-background-color: white;
+}
+.menu-item-style:hover {
+    -fx-background-color: #ff1d6c; /* Pink color on hover */
+}
+.menu-item-style {
+    -fx-font-size: 20px; /* Adjust the size as needed */
+    -fx-background-color: white;
+}
+.menu-item-style:pressed {
+    -fx-background-color: #B74767; /* Pink color on hover */
+}
+.text-field, .password-field {
+    -fx-font-size: 17px; /* Adjust the size as needed */
+}
+.circle {
+    -fx-opacity: 0; /* Initial opacity set to 0 so it's invisible initially */
+}
+
+.circle:hover {
+    -fx-opacity: 0.3; /* Opacity when hovered */
+}
+
+.circle:pressed {
+    -fx-opacity: 0.5; /* Opacity when pressed */
+}
+.search{
+    -fx-background-color: white;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-border-color: #ff1d6c;
+}
+.search:hover{
+    -fx-background-color: #dbeae0;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-border-color: #ae525d;
+}
+.search:pressed {
+    -fx-background-color: #bed3dc;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-border-color: #ae525d;
+}

@@ -1,0 +1,3 @@
+Hormone: TSH
+Level: 0.35
+Timestamp: 2023_11_21_21-37-29

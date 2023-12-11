@@ -1,0 +1,4 @@
+USER
+Email: hridimehnaj@gmail.com
+Password: 12345
+Date of Birth: 2003-06-24

@@ -1,0 +1,4 @@
+Weight: 77.0 kg
+Height: 165.1 cm
+Timestamp: 2023_11_25_12-59-01
+

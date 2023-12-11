@@ -1,0 +1,13 @@
+What is PCOS?=PCOS stands for Polycystic Ovary Syndrome, which is a common health problem caused by an imbalance of reproductive hormones. For more info visit the PCOS section of our Health Menu.
+What are the symptoms of PCOS?=Common symptoms include irregular periods, heavy bleeding, excess hair growth, acne, and weight gain.For more information visit our Health Section.
+Can PCOS be treated?=Yes, treatment may include lifestyle changes, medications, and sometimes surgery. The approach depends on individual symptoms and goals. You may email our doctor users through the Health Professional Section of our Health Menu.
+How is PCOS Journey helping me?=We are providing you with a platform to provide you with information on PCOS, and it's related issues. We are not a medical site and do not provide medical advice. Please consult your doctor for medical advice. You may email our doctor users through the Health Professional Section of our Health Menu.
+How to open an account?=You can open an account by going to the Sign-Up page.
+Hello!=Hello! How may I help you?
+Hi!=Hi! How may I help you?
+How to change my password?=You can change your password by clicking on the "Welcome " text of your Dashboard.
+How are you?=I am fine, thank you. How may I help you?
+How are you today?=I am fine, thank you. How may I help you?
+How do I contact a doctor?=Go to Health Professional menu and click on the doctor you want to contact. You will get a popup where you can input your own user Email and your message to email your doctor.
+How do I check my hormone levels?=If you are a patient user, you can click on "Symptom Tracker" to track your hormones. You can see your previously saved hormone levels by clicking on "Welcome " text of your Dashboard.
+How do I check my weight?=If you are a patient user, you can click on "Weight Tracker" to track your weight. You can see your previously saved weight by clicking on "Welcome " text of your Dashboard.

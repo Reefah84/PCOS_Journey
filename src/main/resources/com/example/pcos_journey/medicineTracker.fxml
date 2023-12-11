@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1540.0" style="-fx-background-color: #ffdde8;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.MedicineTracker">
+   <children>
+      <ImageView fitHeight="930.0" fitWidth="1616.0" layoutX="-77.0" layoutY="-14.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../medicinetrackerbg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-4.0" layoutY="-15.0" prefHeight="166.0" prefWidth="1540.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1327.0" layoutY="24.0"  pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resized%20home2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="92.0" layoutY="71.0" text="Medicine Tracker" textFill="#8635a1">
+               <font>
+                  <Font name="Arial Bold Italic" size="47.0" />
+               </font>
+            </Label>
+            <Circle fx:id="home" onMouseClicked="#setBackHome" fill="#fe2868" layoutX="1402.0" layoutY="99.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="90.0" layoutY="221.0" prefHeight="60.0" prefWidth="526.0" text="Enter the name of your medicine:" textFill="#dc21a1">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="314.0" prefHeight="62.0" prefWidth="192.0" text="How often:" textFill="#dc21a1">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="415.0" prefHeight="62.0" prefWidth="384.0" text="Enter Dosage:" textFill="#dc21a1">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="medicineName" layoutX="630.0" layoutY="225.0" prefHeight="58.0" prefWidth="398.0" style="-fx-border-color: #dc21a1;" />
+      <TextField fx:id="medicineFrequency" layoutX="630.0" layoutY="309.0" prefHeight="70.0" prefWidth="190.0" style="-fx-border-color: #dc21a1;" />
+      <Label layoutX="840.0" layoutY="300.0" prefHeight="90.0" prefWidth="110.0" text="days" textFill="#dc21a1">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage" layoutX="90.0" layoutY="597.0" prefHeight="70.0" prefWidth="762.0" text="Medicine added to your profile" textFill="#a40c74" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="view" layoutX="625.0" layoutY="685.0" mnemonicParsing="false" onAction="#handleSendEmailAction" prefHeight="77.0" prefWidth="375.0" styleClass="close" stylesheets="@button.css" text="View Medicine List" textFill="#b18f8f">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <TextField fx:id="dosage" layoutX="630.0" layoutY="413.0" prefHeight="70.0" prefWidth="190.0" style="-fx-border-color: #dc21a1;" />
+   </children>
+</AnchorPane>

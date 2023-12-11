@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.Hormone_Tracker">
+   <children>
+      <ImageView fitHeight="1043.0" fitWidth="1563.0" layoutX="-13.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../istockphoto-1059274406-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labeup" prefHeight="200.0" prefWidth="1545.0" style="-fx-background-color: #d4d2f4;" text="  HORMONE TRACKER" textFill="#914858" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="51.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="menuButton" layoutX="78.0" layoutY="254.0" mnemonicParsing="false" onAction="#initialize" prefHeight="74.0" prefWidth="798.0" styleClass="menuButton" stylesheets="@button.css" text="Select the Hormone You Want to Track" wrapText="true">
+        <items>
+          <MenuItem fx:id="item1" mnemonicParsing="false" onAction="#initialize" styleClass="menu-item-style" text="Testosteron" />
+            <MenuItem fx:id="item2" mnemonicParsing="false" onAction="#initialize" styleClass="menu-item-style" text="Prolactin" />
+          <MenuItem fx:id="item3" mnemonicParsing="false" onAction="#initialize" styleClass="menu-item-style" text="TSH" />
+        </items>
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="labelside" layoutX="64.0" layoutY="490.0" prefHeight="46.0" prefWidth="899.0" text="Enter the level of your hormone in ng/dl (For TSH in uIU/ml):" wrapText="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="value" layoutX="961.0" layoutY="485.0" onAction="#initialize" prefHeight="59.0" prefWidth="286.0" promptText="hormone level" style="-fx-border-color: #ebb3be;">
+         <font>
+            <Font size="28.0" />
+         </font></TextField>
+      <Label fx:id="result" layoutX="78.0" layoutY="594.0" prefHeight="94.0" prefWidth="1348.0" textFill="#8c0909" wrapText="true">
+         <font>
+            <Font size="31.0" />
+         </font></Label>
+      <Label fx:id="label" layoutX="78.0" layoutY="362.0" prefHeight="102.0" prefWidth="858.0" textFill="#810a0a">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="1275.0" layoutY="483.0" mnemonicParsing="false" onAction="#initialize" prefHeight="65.0" prefWidth="143.0" styleClass="submit" stylesheets="@button.css" text="Submit">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <ImageView  fitHeight="193.0" fitWidth="184.0" layoutX="1312.0" layoutY="15.0"  pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Untitled729_20230916214012.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="homeButton" onMouseClicked="#setHomeButton" fill="#fe2868" layoutX="1404.0" layoutY="107.0" radius="92.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+   </children>
+</AnchorPane>

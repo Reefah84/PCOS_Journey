@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1710.0" prefWidth="1540.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.BasePCOS">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1710.0" prefWidth="1540.0" style="-fx-background-color: #ffdde8;">
+            <children>
+                <AnchorPane layoutX="-8.0" layoutY="-2.0" prefHeight="212.0" prefWidth="1540.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <Button fx:id="LoginButton" layoutX="1165.0" layoutY="73.0" mnemonicParsing="false" onAction="#setLoginButton" prefHeight="52.0" prefWidth="206.0" styleClass="LoginButton" stylesheets="@button.css" text="LOG IN  " textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="27.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="Health" layoutX="280.0" layoutY="118.0" mnemonicParsing="false" onAction="#setHealth" styleClass="Health" stylesheets="@button.css" text="Health" textFill="#ff1d6c">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="FAQ" layoutX="671.0" layoutY="120.0" mnemonicParsing="false" onAction="#setFAQ" styleClass="Health" stylesheets="@button.css" text="FAQ" textFill="#ff1d6c">
+                            <font>
+                                <Font name="Arial Bold" size="25.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="gy" layoutX="400.0" layoutY="120.0" mnemonicParsing="false" onAction="#showListOfDoctors" styleClass="gy" stylesheets="@button.css" text="Health Professional" textFill="#ff1d6c">
+                            <font>
+                                <Font name="Arial Bold" size="25.0" />
+                            </font>
+                        </Button>
+                  <ImageView fitHeight="165.0" fitWidth="149.0" layoutX="1377.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../free-vector-pink-flower_098507_pink_flower.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="93.0" fitWidth="548.0" layoutX="192.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../white%20banground%20writing.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="-1.0" layoutY="1495.0" prefHeight="212.0" prefWidth="1540.0" style="-fx-background-color: #ff7aa1;">
+                    <children>
+                        <Label layoutX="1219.0" layoutY="32.0" text="Email us for any concerns:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="1219.0" layoutY="67.0" text="pcosjourney220@gmail.com" textFill="WHITE">
+                            <font>
+                                <Font name="System Italic" size="20.0" />
+                            </font>
+                        </Label>
+                  <Label layoutX="88.0" layoutY="13.0" text="DISCLAIMER:" textFill="#fff9f9">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="87.0" layoutY="42.0" prefHeight="146.0" prefWidth="944.0" text="This content is for educational purposes and does not offer personalized medical advice or replace professional healthcare guidance. Medical information evolves rapidly, and we cannot ensure comprehensive coverage of all treatment aspects. Your use of information from this source is at your own risk, and neither we nor our authors accept liability for any harm, including fatalities, resulting from product use, information application, or services provided.     All rights reserved © 2023" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                    </children></AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="191.0" prefHeight="100.0" prefWidth="1540.0" style="-fx-background-color: #d4d4ff;">
+               <children>
+                  <Button fx:id="pback" layoutX="19.0" layoutY="3.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#pbackbtn" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: #d4d4ff;" text="&lt;  HEALTH">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="19.0" layoutY="32.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="783.0" text="Polycystic Ovary Syndrome (PCOS)" textFill="#b96b84">
+                     <font>
+                        <Font name="Arial Black" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="102.0" layoutY="327.0" prefHeight="252.0" prefWidth="1346.0" text="Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting individuals with ovaries. It is characterized by irregular menstrual cycles, excess levels of androgens (male hormones), and the presence of small cysts on the ovaries. PCOS often manifests in reproductive-aged individuals, though it can also affect adolescents. Symptoms may include irregular periods, acne, excessive hair growth, and weight fluctuations. Additionally, PCOS is associated with long-term health risks like insulin resistance, diabetes, and cardiovascular issues. While there is no cure, early diagnosis and lifestyle modifications, such as a balanced diet and regular exercise, can help manage PCOS and improve quality of life." wrapText="true">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <TitledPane fx:id="titledPane1" animated="false" layoutX="105.0" layoutY="590.0" prefHeight="161.0" prefWidth="1235.0" style="-fx-background-color: #ffdde8;" stylesheets="@style.css" text="Causes" textFill="WHITE" wrapText="true">
+               <content>
+                  <Label prefHeight="113.0" prefWidth="1214.0" text="The exact cause is unknown, but it is believed to be a combination of genetic and environmental factors. Insulin resistance and hormonal imbalances play a significant role. Elevated levels of insulin can lead to increased androgen production, disrupting the normal ovulation process and leading to the characteristic symptoms of PCOS." wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </content>
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="titledPane2" animated="false" layoutX="105.0" layoutY="780.0" prefHeight="154.0" prefWidth="1235.0" stylesheets="@style.css" text="Symptoms" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+               <content>
+                  <Label prefHeight="132.0" prefWidth="1218.0" text="Irregular menstrual cycles, excessive hair growth, acne and oily skin, weight gain or difficulty losing weight, thinning hair on the scalp, darkening of skin in certain areas are considered as some of the major symptoms." wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="titledPane3" animated="false" layoutX="105.0" layoutY="1210.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="1238.0" stylesheets="@style.css" text="Diagnosis" textFill="WHITE">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@style.css">
+                     <children>
+                        <Label layoutX="6.0" layoutY="6.0" prefHeight="120.0" prefWidth="1218.0" text="If you think you have polycystic ovary syndrome (PCOS), it’s important you see your doctor. You might be referred to a specialist, such as an endocrinologist (hormone specialist) or gynaecologist for more detailed assessments. An early diagnosis and support from a team of specialists can help manage the symptoms of PCOS and reduce the risk of long-term health problems." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="titledPane4" animated="false" layoutX="105.0" layoutY="970.0" prefHeight="202.0" prefWidth="1234.0" stylesheets="@style.css" text=" Treatment &amp; Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+               <content>
+                  <Label prefHeight="122.0" prefWidth="1211.0" text="If you are diagnosed with polycystic ovary syndrome (PCOS), it’s important to work with your doctor and a medical team to manage your symptoms and improve your long-term health outcomes. Women with PCOS may have a range of symptoms that require different treatments. Depending on your symptoms, you can seek help from a range of healthcare professionals, including an endocrinologist, gynaecologist, dietitian, dermatologist, exercise physiologist, fertility specialist and psychologist. Your doctor can help coordinate your care and refer you to specialists where needed. " wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </content>
+            </TitledPane>
+            <ImageView fitHeight="147.0" fitWidth="170.0" layoutX="35.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resized%20home2.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="home" onMouseClicked="#setHome" fill="#fe2868" layoutX="109.0" layoutY="100.0" radius="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

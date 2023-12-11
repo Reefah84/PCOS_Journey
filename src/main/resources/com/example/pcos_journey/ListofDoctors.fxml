@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1710.0" prefWidth="1540.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.ListofDoctors">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1710.0" prefWidth="1540.0" style="-fx-background-color: #ffdde8;">
+            <children>
+                <AnchorPane layoutX="-8.0" layoutY="-2.0" prefHeight="196.0" prefWidth="1540.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <ImageView fitHeight="147.0" fitWidth="170.0" layoutX="35.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../resized%20home2.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="93.0" fitWidth="548.0" layoutX="192.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../white%20banground%20writing.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="LoginButton" layoutX="1165.0" layoutY="73.0" mnemonicParsing="false" onAction="#setLoginButton" prefHeight="52.0" prefWidth="206.0" styleClass="LoginButton" stylesheets="@button.css" text="LOG IN  " textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="27.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="42.0" fitWidth="34.0" layoutX="1313.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../lock-16.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="Health" layoutX="250.0" layoutY="120.0" mnemonicParsing="false" onAction="#setHome" styleClass="Health" stylesheets="@button.css" text="Health" textFill="#ff1d6c">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="FAQ" layoutX="671.0" layoutY="120.0" mnemonicParsing="false" onAction="#setFAQ" styleClass="Health" stylesheets="@button.css" text="FAQ" textFill="#ff1d6c">
+                            <font>
+                                <Font name="Arial Bold" size="25.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="165.0" fitWidth="149.0" layoutX="1377.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../free-vector-pink-flower_098507_pink_flower.png" />
+                            </image>
+                        </ImageView>
+                  <Button fx:id="gy" layoutX="400.0" layoutY="120.0" mnemonicParsing="false" onAction="#showListOfDoctors" styleClass="gy" stylesheets="@button.css" text="Health Professional" textFill="#ff1d6c">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Circle fx:id="home" fill="#fe2868" layoutX="109.0" layoutY="100.0" onMouseClicked="#setHome" radius="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="1250.0" fitWidth="919.0" layoutX="742.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../quizpage_flower2.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="-1.0" layoutY="1495.0" prefHeight="212.0" prefWidth="1540.0" style="-fx-background-color: #ff7aa1;">
+                    <children>
+                        <Label layoutX="1219.0" layoutY="32.0" prefHeight="31.0" prefWidth="277.0" text="Email us for any concerns:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="1219.0" layoutY="67.0" text="pcos220journeyg@mail.com" textFill="WHITE">
+                            <font>
+                                <Font name="System Italic" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="111.0" layoutY="14.0" text="DISCLAIMER:" textFill="#fff9f9">
+                            <font>
+                                <Font name="System Bold" size="22.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="111.0" layoutY="36.0" prefHeight="146.0" prefWidth="944.0" text="This content is for educational purposes and does not offer personalized medical advice or replace professional healthcare guidance. Medical information evolves rapidly, and we cannot ensure comprehensive coverage of all treatment aspects. Your use of information from this source is at your own risk, and neither we nor our authors accept liability for any harm, including fatalities, resulting from product use, information application, or services provided.     All rights reserved © 2023" textFill="WHITE" wrapText="true">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            <ListView fx:id="doctorsListView" layoutX="90.0" layoutY="480.0" onMouseClicked="#handleDoctorSelection" prefHeight="901.0" prefWidth="728.0">
+               <effect>
+                  <DropShadow height="30.36" radius="15.265" spread="0.09" width="32.7">
+                     <color>
+                        <Color red="0.6684444546699524" green="0.14222222566604614" blue="0.800000011920929" />
+                     </color>
+                  </DropShadow>
+               </effect></ListView>
+            <Label layoutX="90.0" layoutY="400.0" text="List of Doctors in this site:">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchField" layoutX="85.0" layoutY="250.0" prefHeight="62.0" prefWidth="740.0" promptText="search" style="-fx-border-color: #ff1d6c; -fx-border-radius: 100; -fx-background-radius: 100;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button fx:id="search" layoutX="730.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="50.0" prefWidth="78.0" styleClass="search" />
+            <ImageView fx:id="searchim" onMouseClicked="#handleSearchImageClicked" fitHeight="49.0" fitWidth="43.0" layoutX="750.0" layoutY="260.0"  pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../search2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="error" layoutX="90.0" layoutY="342.0" style="visibility: false;" text="Sorry. Doctor user not found." textFill="RED">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

@@ -1,0 +1,4 @@
+USER
+Email: tasniareefah@gmail.com
+Password: 1234
+Date of Birth: 2002-12-18

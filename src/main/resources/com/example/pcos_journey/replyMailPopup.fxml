@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.ReplyMailController">
+    <children>
+        <ImageView fitHeight="583.0" fitWidth="800.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../3994278.jpg" />
+            </image>
+        </ImageView>
+        <TextArea fx:id="message" layoutX="140.0" layoutY="267.0" prefHeight="189.0" prefWidth="542.0" style="-fx-border-color: #ea5a85;" />
+        <Button fx:id="sendButton" layoutX="358.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleSendButtonAction" styleClass="send" stylesheets="@button.css" text="SEND" textFill="#ea5a85">
+            <font>
+                <Font name="Arial Bold" size="20.0" />
+            </font>
+        </Button>
+        <Label layoutX="139.0" layoutY="225.0" text="Enter your message: ">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="reply" layoutX="140.0" layoutY="186.0" prefHeight="32.0" prefWidth="542.0" style="-fx-border-color: #ea5a85;" />
+        <Label layoutX="139.0" layoutY="150.0" text="Enter reply email: ">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="backhome" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleGoBackButtonAction" styleClass="back" stylesheets="@button.css" text="Go Back" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="20.0" />
+            </font>
+        </Button>
+      <TextField fx:id="user" layoutX="140.0" layoutY="108.0" prefHeight="32.0" prefWidth="542.0" style="-fx-border-color: #ea5a85;" />
+      <Label layoutX="139.0" layoutY="73.0" text="Enter your email: ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage" layoutX="27.0" layoutY="473.0" prefHeight="32.0" prefWidth="304.0" />
+    </children>
+</AnchorPane>

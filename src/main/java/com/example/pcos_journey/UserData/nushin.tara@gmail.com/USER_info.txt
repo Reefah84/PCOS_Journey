@@ -1,0 +1,4 @@
+USER
+Email: nushin.tara@gmail.com
+Password: 2222
+Date of Birth: 2002-11-14

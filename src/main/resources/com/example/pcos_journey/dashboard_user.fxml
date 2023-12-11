@@ -1,102 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="767.0" style="-fx-background-color: #ffdde8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" style="-fx-background-color: #ffdde8;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.dashboardUserController">
    <top>
-      <AnchorPane prefHeight="122.0" prefWidth="758.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="196.0" prefWidth="1540.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="56.0" fitWidth="70.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="147.0" fitWidth="170.0" layoutX="35.0" layoutY="27.0" onMouseClicked="#setHome" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resized%20home2.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="93.0" fitWidth="548.0" layoutX="192.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../white%20banground%20writing.png" />
                </image>
             </ImageView>
-            <Button layoutX="590.0" layoutY="41.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="92.0" style="-fx-background-color: #b74767;" text="LOG OUT    " textFill="WHITE">
+            <Button fx:id="logout" layoutX="1154.0" layoutY="60.0" mnemonicParsing="false" onAction="#setLogout" prefHeight="52.0" prefWidth="206.0" styleClass="logout" stylesheets="@button.css" text="LOG OUT    " textFill="WHITE">
                <font>
-                  <Font name="Arial Bold" size="12.0" />
+                  <Font name="Arial Bold" size="27.0" />
                </font>
             </Button>
-            <MenuButton layoutX="79.0" layoutY="79.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Health" textFill="#ff1d6c">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Mental Health" />
-                <MenuItem mnemonicParsing="false" text="Fertility" />
-                 <MenuItem mnemonicParsing="false" text="Exercise and Fitness" />
-                 <MenuItem mnemonicParsing="false" text="Diet and Nutrition" />
-              </items>
+            <Button fx:id="Health" layoutX="250.0" layoutY="120.0" mnemonicParsing="false" onAction="#setHealth" styleClass="Health" stylesheets="@button.css" text="Health" textFill="#ff1d6c">
                <font>
-                  <Font name="Arial Bold" size="14.0" />
+                  <Font name="System Bold" size="25.0" />
                </font>
-            </MenuButton>
-            <MenuButton layoutX="161.0" layoutY="79.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Health Professional" textFill="#ff1d6c">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Gynaecologist" />
-                  <MenuItem mnemonicParsing="false" text="Hospital" />
-               </items>
+            </Button>
+            <Button fx:id="FAQ" layoutX="671.0" layoutY="120.0" mnemonicParsing="false" onAction="#setFAQ" styleClass="Health" stylesheets="@button.css" text="FAQ" textFill="#ff1d6c">
                <font>
-                  <Font name="Arial Bold" size="14.0" />
+                  <Font name="Arial Bold" size="25.0" />
                </font>
-            </MenuButton>
-            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="659.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+            </Button>
+            <ImageView fitHeight="42.0" fitWidth="34.0" layoutX="1313.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../lock-16.png" />
                </image>
             </ImageView>
-            <Button layoutX="331.0" layoutY="79.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="News" textFill="#ff1d6c">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Button>
-            <ImageView fitHeight="72.0" fitWidth="63.0" layoutX="690.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="149.0" layoutX="1375.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../free-vector-pink-flower_098507_pink_flower.png" />
                </image>
             </ImageView>
+            <Button fx:id="gy" layoutX="400.0" layoutY="120.0" mnemonicParsing="false" onAction="#showListOfDoctors" styleClass="gy" stylesheets="@button.css" text="Health Professional" textFill="#ff1d6c">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete" layoutX="920.0" layoutY="61.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="54.0" prefWidth="210.0" styleClass="delete" stylesheets="@button.css" text="Delete Account" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Circle fx:id="home" onMouseClicked="#setHome" fill="#fe2868" layoutX="109.0" layoutY="100.0" radius="72.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
          </children>
       </AnchorPane>
    </top>
    <left>
-      <AnchorPane prefHeight="390.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="594.0" prefWidth="958.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="46.0" layoutY="32.0" prefHeight="49.0" prefWidth="162.0" text="WELCOME">
+            <Label fx:id="welcome" layoutX="50.0" layoutY="20.0" prefHeight="119.0" prefWidth="886.0" text="WELCOME" visible="false" wrapText="true">
                <font>
-                  <Font name="Bodoni MT" size="30.0" />
+                  <Font name="Bodoni MT" size="55.0" />
                </font>
             </Label>
-            <Label layoutX="46.0" layoutY="82.0" prefHeight="52.0" prefWidth="421.0" text="It is good to keep track of your health. How are you feeling today?" wrapText="true">
+            <Label layoutX="50.0" layoutY="129.0" prefHeight="98.0" prefWidth="898.0" text="It is good to keep track of your health. How are you feeling today?" wrapText="true">
                <font>
-                  <Font size="15.0" />
+                  <Font size="30.0" />
                </font>
             </Label>
-            <Button layoutX="46.0" layoutY="156.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="388.0" style="-fx-background-color: #d4d4ff; -fx-border-color: #dca4ee; -fx-border-radius: 10; -fx-background-radius: 10;" text="Symptom Tracker">
+            <Button fx:id="symptomButton" layoutX="50.0" layoutY="248.0" mnemonicParsing="false" onAction="#setSymptomButton" prefHeight="45.0" prefWidth="665.0" styleClass="symptom-weight-doctor-buttons" stylesheets="@button.css" text="Symptom Tracker">
                <font>
-                  <Font size="18.0" />
+                  <Font size="35.0" />
                </font>
             </Button>
-            <Button layoutX="46.0" layoutY="213.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="388.0" style="-fx-background-color: #d4d4ff; -fx-border-color: #dca4ee; -fx-border-radius: 10; -fx-background-radius: 10;" text="Weight Tracker">
+            <Button fx:id="weightButton" layoutX="50.0" layoutY="353.0" mnemonicParsing="false" onAction="#setWeightButton" prefHeight="45.0" prefWidth="665.0" styleClass="symptom-weight-doctor-buttons" stylesheets="@button.css" text="Weight Tracker">
                <font>
-                  <Font size="18.0" />
+                  <Font size="35.0" />
                </font>
             </Button>
-            <Button layoutX="46.0" layoutY="270.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="388.0" style="-fx-background-color: #d4d4ff; -fx-border-color: #dca4ee; -fx-border-radius: 10; -fx-background-radius: 10;" text="My Doctors">
+            <Button fx:id="DoctorButton" layoutX="50.0" layoutY="472.0" mnemonicParsing="false" onAction="#setDoctorButton" prefHeight="45.0" prefWidth="665.0" styleClass="symptom-weight-doctor-buttons" stylesheets="@button.css" text="My Doctors">
                <font>
-                  <Font size="18.0" />
+                  <Font size="35.0" />
                </font>
             </Button>
-            <PieChart layoutX="483.0" layoutY="116.0" prefHeight="162.0" prefWidth="222.0" style="-fx-background-color: #000000;" title="days" />
          </children></AnchorPane>
    </left>
+   <right>
+      <AnchorPane prefHeight="594.0" prefWidth="589.0" style="-fx-background-color: #eec1eb;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="35.0" text="Messages from Doctors:" textFill="#59188e">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <ListView fx:id="messageFrom" layoutX="42.0" layoutY="87.0" prefHeight="474.0" prefWidth="479.0" />
+         </children></AnchorPane>
+   </right>
 </BorderPane>

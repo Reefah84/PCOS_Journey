@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="patientmessage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #f588ab;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.SeePatientMessage">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="919.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../istockphoto-1059274406-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="314.0" layoutX="120.0" layoutY="100.0" stroke="#ef86ed" strokeType="INSIDE" width="562.0" />
+      <Label fx:id="message" layoutX="139.0" layoutY="111.0" prefHeight="287.0" prefWidth="527.0" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fromto" layoutX="132.0" layoutY="35.0" text="Message from your patient: ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="145.0" fitWidth="187.0" layoutX="-13.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../2345932-middle-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="reply" layoutX="423.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleReplyAction" prefHeight="50.0" prefWidth="104.0" styleClass="saveButton" stylesheets="@button.css" text="Reply" textFill="#9d1cb7">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="79.0" fitWidth="110.0" layoutX="682.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../m2i8G6H7H7G6K9A0.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="255.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleBackAction" prefHeight="50.0" prefWidth="151.0" styleClass="saveButton" stylesheets="@button.css" text="Go Back" textFill="#9d1cb7">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

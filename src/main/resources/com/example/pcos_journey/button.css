@@ -1,0 +1,348 @@
+
+.LoginButton{
+    -fx-background-color: #b74767;
+    -fx-text-fill: white;
+}
+.LoginButton:hover {
+    -fx-background-color: #d0607e; /* Lighter shade for hover */
+    -fx-text-fill: #f0e6f0; /* Lighter text color for hover */
+}
+
+.LoginButton:pressed {
+    -fx-background-color: #9e3e52; /* Darker shade for pressed */
+    -fx-text-fill: #ffffff; /* White text color for pressed */
+}
+.loginbutton{
+    -fx-background-color: #FF91A6FF;
+    -fx-text-fill: black;
+    -fx-border-color: #ff2d6a
+}
+.forgotpasswordbutton{
+    -fx-background-color: #ffdde8;
+    -fx-text-fill: #d400aa;
+}
+.signupbutton{
+    -fx-background-color: #ffdde8;
+    -fx-text-fill: #0f26d4;
+}
+.loginbutton:hover{
+    -fx-background-color: #ff1c6b; /* New background color when pressed */
+    -fx-text-fill: white; /* Text color when pressed */
+}
+.forgotpasswordbutton:hover, .signupbutton:hover{
+    -fx-background-color:  #f3d3dd; /* New background color when pressed */
+    -fx-text-fill: blue;
+}
+.loginbutton:pressed, .forgotpasswordbutton:pressed, .signupbutton:pressed{
+    -fx-background-color: #b74767; /* New background color when selected */
+    -fx-text-fill: white; /* Text color when selected */
+}
+.sendOTP{
+    -fx-background-color:  #ff91a6;
+    -fx-border-color:  #ff2d6a;
+    -fx-text-fill: black;
+}
+.sendOTP:hover{
+    -fx-background-color: #ff1c6b; /* New background color when pressed */
+    -fx-text-fill: white /* Text color when pressed */
+}
+.sendOTP:pressed{
+    -fx-background-color: #b74767; /* New background color when selected */
+    -fx-text-fill: white; /* Text color when selected */
+}
+.nextButton{
+    -fx-background-color:   #ff91a6;
+    -fx-border-color:   #ff2d6a;
+    -fx-text-fill: black;
+}
+.nextButton:hover{
+    -fx-background-color: #ff1c6b;
+    -fx-text-fill: white;
+}
+.nextButton:pressed{
+    -fx-background-color: #b74767;
+    -fx-text-fill: white;
+}
+.resendOTP,.LOGIN{
+    -fx-background-color:  #ffdde8;
+    -fx-text-fill: blue;
+}
+.resendOTP:hover,.LOGIN:hover{
+    -fx-background-color: #f3d3dd;
+    -fx-text-fill: blue;
+}
+.resendOTP:pressed,.LOGIN:pressed{
+    -fx-background-color:  #b74767;
+    -fx-text-fill: white;
+}
+.SaveButton,.SignupButton{
+    -fx-background-color:  #ff91a6;
+    -fx-border-color:   #ff2d6a;
+    -fx-text-fill: black;
+}
+.SaveButton:hover,.SignupButton:hover{
+    -fx-background-color: #ff1c6b;
+    -fx-text-fill: white;
+}
+.SaveButton:pressed,.SignupButton:pressed{
+    -fx-background-color: #b74767;
+    -fx-text-fill: white;
+}
+.Health {
+    -fx-background-color: white;
+    //-fx-text-fill: #ff1d6c; /* Original text color */
+}
+
+.Health:hover {
+    -fx-background-color: #f3f3f3; /* Lighter background on hover */
+    //-fx-text-fill: #ff1d6c; /* Text color change on hover */
+}
+
+.Health:pressed { /* Similar to 'pressed' for MenuButton */
+    -fx-background-color: #ffdde8; /* Background color when active/pressed */
+    //-fx-text-fill: #ff1d6c; /* Text color when active/pressed */
+}
+
+.gy {
+    -fx-background-color: white;
+    -fx-text-fill: #ff1d6c; /* Original text color */
+}
+
+.gy:hover {
+    -fx-background-color: #f3f3f3; /* Lighter background on hover */
+    -fx-text-fill: #ff1d6c; /* Text color change on hover */
+}
+
+.gy:pressed {
+    -fx-background-color: #ffdde8; /* Background color when pressed */
+    -fx-text-fill: #ff1d6c; /* Text color when pressed */
+}
+.mentalHealth, .fertility, .exercise, .diet,.Mental,.fertile,.fit,.nutrition{
+    -fx-font-size: 22px; /* Change the font size */
+    -fx-text-fill: #ff1d6c; /* Change the font color */
+}
+
+.mentalHealth:hover, .fertility:hover, .exercise:hover, .diet:hover,.Mental:hover,.fertile:hover,.fit:hover,.nutrition:hover{
+    -fx-background: #FF1D6C; /* Change the hover color */
+    -fx-text-fill: white; /* Change the text color on hover */
+}
+
+.mentalHealth:pressed, .fertility:pressed, .exercise:pressed, .diet:pressed ,.Mental:pressed,.fertile:pressed, .fit:pressed, .nutrition:pressed{
+    -fx-background: #B74767; /* Change the selection color */
+    -fx-text-fill: white; /* Change the text color on selection */
+}
+.logout {
+    -fx-background-color: #b74767;
+    -fx-text-fill: white;
+    -fx-font-size: 27px;
+}
+
+.logout:hover {
+    -fx-background-color: pink;
+    -fx-text-fill: black;
+}
+
+.logout:pressed {
+    -fx-background-color: #8b2d4d;
+    -fx-text-fill: white;
+}
+
+/* Delete Account button */
+.delete {
+    -fx-background-color: #ff0000;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-border-color: #c13737;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.delete:hover {
+    -fx-background-color: #e60000;
+    -fx-text-fill: white;
+}
+
+.delete:pressed {
+    -fx-background-color:#e60000;
+    -fx-text-fill: blue;
+}
+
+/* Symptom, Weight, and Doctor buttons common style */
+.symptom-weight-doctor-buttons {
+    -fx-background-color: #d4d4ff;
+    -fx-text-fill: black;
+    -fx-font-size: 35px;
+    -fx-border-color: #dca4ee;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.symptom-weight-doctor-buttons:hover {
+    -fx-background-color: #c0c0ff;
+    -fx-text-fill: darkblue;
+}
+
+.symptom-weight-doctor-buttons:pressed {
+    -fx-background-color: #acaaff;
+    -fx-text-fill: blue;
+}
+
+/* Apply the common style to each specific button */
+.symptomButton, .weightButton, .DoctorButton {
+    -fx-style-class: "symptom-weight-doctor-buttons";
+}
+.menuButton{
+    -fx-background-color:  #ebb3be;
+    -fx-text-fill: black;
+}
+.menuButton:hover{
+    -fx-background-color: #e0abb5;
+    -fx-text-fill: black;
+}
+.menuButton:showing {
+    -fx-background-color:  #ebb3be;
+    -fx-text-fill: white;
+}
+.submit{
+    -fx-background-color:  #ebb3be;
+    -fx-text-fill: black;
+}
+.submit:hover{
+    -fx-background-color:  #e0abb5;
+    -fx-text-fill: black;
+}
+.submit:pressed{
+    -fx-background-color:  #ebb3be;
+    -fx-text-fill: white;
+}
+.saveButton{
+    -fx-background-color:  #ffdddc;
+    -fx-border-color:  #9d1cb7;
+    -fx-border-radius:  20;
+    -fx-background-radius:  20;
+    -fx-text-fill: #9d1cb7;
+}
+.saveButton:hover {
+    -fx-background-color: #f2c1c9; /* Lighter shade for hover */
+    -fx-text-fill: #7d0e8f; /* Slightly darker text color for contrast */
+}
+
+.saveButton:pressed {
+    -fx-background-color: #e6aeb3; /* Even lighter shade for pressed */
+    -fx-text-fill: #6a0c78; /* Even darker text color for pressed state */
+}
+.goBackButton, .agreeButton{
+    -fx-background-color:   #ee94a8;
+    -fx-border-color:  #fa9bb0;
+    -fx-text-fill: black;
+}
+.goBackButton:hover, .agreeButton:hover {
+    -fx-background-color: #f3acb4; /* Lighter shade for hover */
+    -fx-text-fill: #333333; /* Darker text color for contrast */
+}
+
+.goBackButton:pressed, .agreeButton:pressed {
+    -fx-background-color: #e7939f; /* Even lighter shade for pressed */
+    -fx-text-fill: #731869; /* Even darker text color for pressed state */
+}
+.option{
+    -fx-background-color:  #Ffc3ee;
+    -fx-text-fill: black;
+}
+.option:hover {
+    -fx-background-color: #f3b8e0; /* Lighter shade for hover */
+}
+.option:pressed {
+    -fx-background-color: #e7939f; /* Color when pressed */
+    -fx-text-fill: white; /* Text color when pressed */
+}
+.symHome,.docHome,.quizHome{
+    -fx-background-color:  #ffffff;
+    -fx-border-color:   #c200a2;
+    -fx-text-fill:  #c200a2;
+}
+.symHome:hover, .docHome:hover, .quizHome:hover {
+    -fx-background-color: #f2e6f3; /* Lighter shade for hover */
+    -fx-text-fill: #b3008f; /* Slightly darker text color for hover */
+}
+
+.symHome:pressed, .docHome:pressed, .quizHome:pressed {
+    -fx-background-color: #e6cce6; /* Even darker shade for pressed */
+    -fx-text-fill: #990073; /* Darker text color for pressed */
+}
+.send{
+    -fx-background-color:   #ffcbd1;
+    -fx-border-color:    #ea5a85;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill:   #ea5a85;
+}
+.send:hover {
+    -fx-background-color: #f7b2bd; /* Lighter shade for hover */
+    -fx-text-fill: #d84a6a; /* Slightly darker text color for hover */
+}
+
+.send:pressed {
+    -fx-background-color: #e599a1; /* Even lighter shade for pressed */
+    -fx-text-fill: #c43854; /* Even darker text color for pressed state */
+}
+.back{
+    -fx-background-color:    #ea5a85;
+    -fx-border-color:     #ea5a85;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill:   white;
+}
+.back:hover {
+    -fx-background-color: #fc7a92; /* Lighter shade for hover */
+    -fx-text-fill: #ffffff; /* Keeping text color white for visibility */
+}
+
+.back:pressed {
+    -fx-background-color: #d4556c; /* Even darker shade for pressed */
+    -fx-text-fill: #ffffff; /* Keeping text color white for visibility */
+}
+.close{
+    -fx-background-color:     #c9eded;
+    -fx-border-color:      #c426af;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill:    #c426af;
+}
+.close:hover {
+    -fx-background-color: #d7f0f0; /* Lighter shade for hover */
+    -fx-text-fill: #b81d9d; /* Slightly darker text color for hover */
+}
+
+.close:pressed {
+    -fx-background-color: #b8e0e0; /* Even lighter shade for pressed */
+    -fx-text-fill: #a21989; /* Even darker text color for pressed state */
+}
+.weight {
+    -fx-background-color: #ffd6d5; /* Original button color */
+    -fx-border-color: #ffa7b5;
+    -fx-text-fill: #e730a7;
+}
+.weight:hover {
+    -fx-background-color: #ffb4b3; /* Darker shade for hover */
+    -fx-text-fill: #d61f96; /* Slightly darker text color for hover */
+}
+.weight:pressed {
+    -fx-background-color: #ff9291; /* Even darker shade for pressed */
+    -fx-text-fill: #be1b85; /* Even darker text color for pressed state */
+}
+.pcos{
+    -fx-background-color:  #d4d4ff; /* Original button color */
+    -fx-border-color:  #b228e0;
+    -fx-text-fill:  #b228e0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.pcos:hover {
+    -fx-background-color: #c0c0ff; /* Darker shade for hover */
+    -fx-text-fill: #a21989; /* Slightly darker text color for hover */
+}
+.pcos:pressed{
+    -fx-background-color: #acaaff; /* Even darker shade for pressed */
+    -fx-text-fill: #8b1070; /* Even darker text color for pressed state */
+}

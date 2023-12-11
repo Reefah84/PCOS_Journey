@@ -7,64 +7,72 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
-    <left>
-        <AnchorPane prefHeight="512.0" prefWidth="339.0" style="-fx-background-color: #eec1eb;" BorderPane.alignment="CENTER">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.OTPController">
+    <right>
+        <AnchorPane prefHeight="790.0" prefWidth="794.0" style="-fx-background-color: #ffdde8;" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../Untitled729_20230916213949.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="125.0" fitWidth="279.0" layoutX="29.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../Screenshot%202023-09-15%20231929.png" />
-                    </image>
-                </ImageView>
-                <Label layoutX="29.0" layoutY="366.0" text="“PCOS is not just a disease, it’s a journey.”" textFill="#e71554">
+            <Button fx:id="resendOTP" layoutX="593.0" layoutY="589.0" mnemonicParsing="false" onAction="#setResendOTP" styleClass="resendOTP" stylesheets="@button.css" text="Resend OTP" textFill="#1519ec">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+                <Label layoutX="270.0" layoutY="176.0" prefHeight="71.0" prefWidth="550.0" text="Forgot Password?" textFill="#d400aa">
                     <font>
-                        <Font name="Arial Narrow Bold Italic" size="18.0" />
+                        <Font name="Arial Rounded MT Bold" size="59.0" />
                     </font>
                 </Label>
-            </children>
-        </AnchorPane>
-    </left>
-    <center>
-        <AnchorPane prefHeight="477.0" prefWidth="368.0" style="-fx-background-color: #ffdde8;" BorderPane.alignment="CENTER">
-            <children>
-                <Label layoutX="48.0" layoutY="118.0" prefHeight="44.0" prefWidth="331.0" text="Forgot Password?" textFill="#d400aa">
+                <Label layoutX="207.0" layoutY="304.0" prefHeight="56.0" prefWidth="309.0" text="Enter OTP:">
                     <font>
-                        <Font name="Arial Rounded MT Bold" size="37.0" />
+                        <Font name="Arial" size="39.0" />
                     </font>
                 </Label>
-                <Label layoutX="48.0" layoutY="197.0" prefHeight="22.0" prefWidth="137.0" text="Enter OTP code:">
-                    <font>
-                        <Font name="Arial" size="18.0" />
-                    </font>
-                </Label>
-                <TextField layoutX="50.0" layoutY="236.0" prefHeight="27.0" prefWidth="326.0" style="-fx-border-color: #ff7aa1;" />
-                <ImageView fitHeight="72.0" fitWidth="63.0" layoutX="365.0" pickOnBounds="true" preserveRatio="true">
+                <TextField fx:id="OTP" layoutX="207.0" layoutY="390.0" prefHeight="54.0" prefWidth="685.0" style="-fx-border-color: #ff7aa1;" />
+                <ImageView fitHeight="185.0" fitWidth="242.0" layoutX="789.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../free-vector-pink-flower_098507_pink_flower.png" />
                     </image>
                 </ImageView>
-                <Button layoutX="170.0" layoutY="277.0" mnemonicParsing="false" style="-fx-background-color: #ff91a6; -fx-border-color: #ff2d6a;" text="Send OTP">
+                <Button fx:id="nextbutton" layoutX="443.0" layoutY="466.0" mnemonicParsing="false" onAction="#setNextbutton" prefHeight="56.0" prefWidth="199.0" styleClass="nextButton" stylesheets="@button.css" text="NEXT">
                     <font>
-                        <Font name="Arial" size="14.0" />
+                        <Font name="Arial" size="30.0" />
                     </font>
                 </Button>
-                <Label layoutX="91.0" layoutY="319.0" prefHeight="25.0" prefWidth="158.0" text="Didn't recieve OTP code? " textAlignment="CENTER" wrapText="true">
+                <Label layoutX="327.0" layoutY="594.0" prefHeight="57.0" prefWidth="266.0" text="Didn't recieve OTP?" textAlignment="CENTER" wrapText="true">
                     <font>
-                        <Font size="14.0" />
-                    </font></Label>
-            <Button layoutX="249.0" layoutY="319.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #ffdde8;" text="Resend code" textFill="#1009df">
+                        <Font size="30.0" />
+                    </font>
+            </Label>
+            <Label fx:id="incorrect" layoutX="447.0" layoutY="541.0" text="Incorrect OTP" textFill="#ff1616" visible="false">
                <font>
-                  <Font name="Arial" size="14.0" />
+                  <Font size="32.0" />
                </font>
-            </Button>
+            </Label>
             </children>
         </AnchorPane>
-    </center>
+    </right>
+    <left>
+        <AnchorPane prefHeight="790.0" prefWidth="697.0" style="-fx-background-color: #eec1eb;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="211.0" fitWidth="212.0" layoutX="35.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Untitled729_20230916213949.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="257.0" fitWidth="567.0" layoutX="36.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Screenshot%202023-09-15%20231929.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="35.0" layoutY="552.0" prefHeight="86.0" prefWidth="650.0" text="“PCOS is not just a disease, it’s a journey.”" textFill="#e71554">
+                    <font>
+                        <Font name="Arial Narrow Bold Italic" size="38.0" />
+                    </font>
+                </Label>
+            <Circle id="overlay" fill="#fe2868" layoutX="141.0" layoutY="173.0" opacity="0.79" radius="108.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+            </children>
+        </AnchorPane>
+    </left>
 </BorderPane>

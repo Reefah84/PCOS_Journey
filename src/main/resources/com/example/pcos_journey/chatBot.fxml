@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1540.0" style="-fx-background-color: #ffdde8;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcos_journey.ChatBot">
+   <children>
+      <AnchorPane layoutX="-13.0" layoutY="-4.0" prefHeight="790.0" prefWidth="434.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView  fitHeight="201.0" fitWidth="229.0" layoutX="114.0" layoutY="67.0"  pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resized%20home2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="91.0" fitWidth="409.0" layoutX="22.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pcos_journey_chatbox.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="61.0" layoutY="341.0" prefHeight="135.0" prefWidth="337.0" text="“PCOS is not just a disease, it’s a journey.”" textAlignment="CENTER" textFill="#e71554" wrapText="true">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="gy" layoutX="90.0" layoutY="581.0" mnemonicParsing="false" onAction="#showListOfDoctors" styleClass="gy" stylesheets="@button.css" text="Health Professional" textFill="#ff1d6c">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="LoginButton" layoutX="141.0" layoutY="656.0" mnemonicParsing="false" onAction="#setLoginButton" prefHeight="35.0" prefWidth="162.0" styleClass="LoginButton" stylesheets="@button.css" text="LOG IN  " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="24.0" layoutX="266.0" layoutY="665.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../lock-16.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Health" layoutX="160.0" layoutY="521.0" mnemonicParsing="false" styleClass="Health" stylesheets="@button.css" text="Health" textFill="#ff1d6c">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Circle fx:id="home" onMousePressed="#setBackHome" fill="#fe2868" layoutX="215.0" layoutY="168.0" radius="101.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+         </children>
+         <effect>
+            <DropShadow height="210.5" radius="60.885" width="35.04">
+               <color>
+                  <Color red="1.0" green="0.009999999776482582" blue="0.5709999799728394" opacity="0.5197568535804749" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <ScrollPane fx:id="scroll" layoutX="514.0" layoutY="22.0" prefHeight="701.0" prefWidth="942.0" style="-fx-background-color: #ffdde8; -fx-background-insets: 0;" vbarPolicy="AS_NEEDED" AnchorPane.bottomAnchor="66.39999999999998" AnchorPane.rightAnchor="83.59999999999991">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1055.0" prefWidth="926.0" style="-fx-background-color: #eec1eb;">
+               <children>
+                  <VBox fx:id="messages" fillWidth="true" minHeight="400" prefHeight="1055.0" prefWidth="926.0" spacing="20" style="-fx-background-color: #eec1eb;">
+                     <padding>
+                        <Insets bottom="20" left="20" right="20" top="20" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+         <effect>
+            <DropShadow height="25.68" radius="12.34" spread="0.06" width="25.68">
+               <color>
+                  <Color red="0.7280701994895935" green="0.2912280559539795" blue="0.8736842274665833" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ScrollPane>
+      <HBox layoutX="515.0" layoutY="713.0" prefHeight="82.0" prefWidth="957.0" AnchorPane.bottomAnchor="-5.399999999999977" AnchorPane.leftAnchor="515.0" AnchorPane.rightAnchor="68.0">
+         <TextField fx:id="userInput" prefHeight="59.0" prefWidth="857.0" style="-fx-border-color: #9d1cb7; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 5;" HBox.hgrow="ALWAYS">
+            <effect>
+               <DropShadow radius="12.3375" spread="0.03" width="30.35">
+                  <color>
+                     <Color red="0.4394736886024475" green="0.06315789371728897" blue="0.4736842215061188" />
+                  </color>
+               </DropShadow>
+            </effect></TextField>
+         <Button fx:id="sendMessageButton" mnemonicParsing="false" onAction="#onSendMessage" prefHeight="62.0" prefWidth="128.0" style="-fx-background-color: #9d1cb7; -fx-text-fill: white; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 5;" text="Send">
+            <font>
+               <Font size="31.0" />
+            </font>
+            <effect>
+               <DropShadow height="42.06" radius="21.697499999999998" spread="0.14" width="46.73">
+                  <color>
+                     <Color red="0.9706172943115234" green="0.8962963223457336" blue="1.0" />
+                  </color>
+               </DropShadow>
+            </effect></Button>
+      </HBox>
+   </children>
+</AnchorPane>
